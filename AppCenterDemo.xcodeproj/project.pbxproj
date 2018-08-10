@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27389F70042D7323E32F70E5 /* libPods-AppCenterDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF38823C713BFA3C19285246 /* libPods-AppCenterDemoTests.a */; };
-		5546E1B0FCC80B34C740E81D /* libPods-AppCenterDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E12AF942615CAE7B3AACB88 /* libPods-AppCenterDemo.a */; };
+		27AC8122F840077749627500 /* Pods_AppCenterDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C5D387931CFFB82983F2B0 /* Pods_AppCenterDemoTests.framework */; };
 		7415409F211C81B300812D7E /* Artist.m in Sources */ = {isa = PBXBuildFile; fileRef = 7415409E211C81B300812D7E /* Artist.m */; };
-		741540AA211D328000812D7E /* AppCenterDemoUnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741540A9211D328000812D7E /* AppCenterDemoUnitTests.m */; };
 		741A11952118429B0082A3E9 /* SearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 741A11942118429B0082A3E9 /* SearchTableViewController.m */; };
+		743C3185211D7AB9006BC00C /* AppCenterDemoXCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 743C3184211D7AB9006BC00C /* AppCenterDemoXCTests.m */; };
 		744ED96A21147183007EE1D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ED96921147183007EE1D7 /* AppDelegate.m */; };
 		744ED97021147183007EE1D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744ED96E21147183007EE1D7 /* Main.storyboard */; };
 		744ED97221147185007EE1D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 744ED97121147185007EE1D7 /* Assets.xcassets */; };
 		744ED97521147185007EE1D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 744ED97321147185007EE1D7 /* LaunchScreen.storyboard */; };
 		744ED97821147185007EE1D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ED97721147185007EE1D7 /* main.m */; };
-		744ED98221147185007EE1D7 /* AppCenterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ED98121147185007EE1D7 /* AppCenterDemoTests.m */; };
 		744ED98D21147185007EE1D7 /* AppCenterDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 744ED98C21147185007EE1D7 /* AppCenterDemoUITests.m */; };
-		D9B052E73751A87367A77DEE /* libPods-AppCenterDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FF69A016C6ACFFBE57D394 /* libPods-AppCenterDemoUITests.a */; };
+		8A2E31D031854749F99A9B91 /* Pods_AppCenterDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50B9C03BBE3EC07E242001F5 /* Pods_AppCenterDemoUITests.framework */; };
+		EB7ABDA55DD8E9545FAD7030 /* Pods_AppCenterDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F294D53745A9F53EFD283516 /* Pods_AppCenterDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		741540AC211D328000812D7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 744ED95D21147183007EE1D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 744ED96421147183007EE1D7;
+			remoteInfo = AppCenterDemo;
+		};
+		743C3187211D7AB9006BC00C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 744ED95D21147183007EE1D7 /* Project object */;
 			proxyType = 1;
@@ -49,16 +55,17 @@
 /* Begin PBXFileReference section */
 		399E20DEBC46498B2BE5C26A /* Pods-AppCenterDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCenterDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppCenterDemoUITests/Pods-AppCenterDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		492FEAEB650F6F6A2D492288 /* Pods-AppCenterDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCenterDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppCenterDemo/Pods-AppCenterDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		5E12AF942615CAE7B3AACB88 /* libPods-AppCenterDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppCenterDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50B9C03BBE3EC07E242001F5 /* Pods_AppCenterDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppCenterDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		611F777B3A22E143201E3030 /* Pods-AppCenterDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCenterDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppCenterDemo/Pods-AppCenterDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6E53F22F0BAD072B12530160 /* Pods-AppCenterDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCenterDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppCenterDemoTests/Pods-AppCenterDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		7415409D211C81B300812D7E /* Artist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Artist.h; sourceTree = "<group>"; };
 		7415409E211C81B300812D7E /* Artist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Artist.m; sourceTree = "<group>"; };
 		741540A7211D328000812D7E /* AppCenterDemoUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCenterDemoUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		741540A9211D328000812D7E /* AppCenterDemoUnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCenterDemoUnitTests.m; sourceTree = "<group>"; };
-		741540AB211D328000812D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		741A11932118429B0082A3E9 /* SearchTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTableViewController.h; sourceTree = "<group>"; };
 		741A11942118429B0082A3E9 /* SearchTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewController.m; sourceTree = "<group>"; };
+		743C3182211D7AB9006BC00C /* AppCenterDemoXCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCenterDemoXCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		743C3184211D7AB9006BC00C /* AppCenterDemoXCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCenterDemoXCTests.m; sourceTree = "<group>"; };
+		743C3186211D7AB9006BC00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		744ED96521147183007EE1D7 /* AppCenterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCenterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		744ED96821147183007EE1D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		744ED96921147183007EE1D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,15 +75,13 @@
 		744ED97621147185007EE1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		744ED97721147185007EE1D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		744ED97D21147185007EE1D7 /* AppCenterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCenterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		744ED98121147185007EE1D7 /* AppCenterDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCenterDemoTests.m; sourceTree = "<group>"; };
-		744ED98321147185007EE1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		744ED98821147185007EE1D7 /* AppCenterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCenterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		744ED98C21147185007EE1D7 /* AppCenterDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppCenterDemoUITests.m; sourceTree = "<group>"; };
 		744ED98E21147185007EE1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9709790BF597214EFB0BE797 /* Pods-AppCenterDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCenterDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppCenterDemoTests/Pods-AppCenterDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4C5D387931CFFB82983F2B0 /* Pods_AppCenterDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppCenterDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52BB5512B29425C7B0DF21C /* Pods-AppCenterDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCenterDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppCenterDemoUITests/Pods-AppCenterDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		C0FF69A016C6ACFFBE57D394 /* libPods-AppCenterDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppCenterDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF38823C713BFA3C19285246 /* libPods-AppCenterDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppCenterDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F294D53745A9F53EFD283516 /* Pods_AppCenterDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppCenterDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,11 +92,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		743C317F211D7AB9006BC00C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		744ED96221147183007EE1D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5546E1B0FCC80B34C740E81D /* libPods-AppCenterDemo.a in Frameworks */,
+				EB7ABDA55DD8E9545FAD7030 /* Pods_AppCenterDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27389F70042D7323E32F70E5 /* libPods-AppCenterDemoTests.a in Frameworks */,
+				27AC8122F840077749627500 /* Pods_AppCenterDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9B052E73751A87367A77DEE /* libPods-AppCenterDemoUITests.a in Frameworks */,
+				8A2E31D031854749F99A9B91 /* Pods_AppCenterDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,9 +129,9 @@
 		306F18D5603A1F82B5AD3FBA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5E12AF942615CAE7B3AACB88 /* libPods-AppCenterDemo.a */,
-				FF38823C713BFA3C19285246 /* libPods-AppCenterDemoTests.a */,
-				C0FF69A016C6ACFFBE57D394 /* libPods-AppCenterDemoUITests.a */,
+				F294D53745A9F53EFD283516 /* Pods_AppCenterDemo.framework */,
+				A4C5D387931CFFB82983F2B0 /* Pods_AppCenterDemoTests.framework */,
+				50B9C03BBE3EC07E242001F5 /* Pods_AppCenterDemoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,22 +149,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		741540A8211D328000812D7E /* AppCenterDemoUnitTests */ = {
+		743C3183211D7AB9006BC00C /* AppCenterDemoXCTests */ = {
 			isa = PBXGroup;
 			children = (
-				741540A9211D328000812D7E /* AppCenterDemoUnitTests.m */,
-				741540AB211D328000812D7E /* Info.plist */,
+				743C3184211D7AB9006BC00C /* AppCenterDemoXCTests.m */,
+				743C3186211D7AB9006BC00C /* Info.plist */,
 			);
-			path = AppCenterDemoUnitTests;
+			path = AppCenterDemoXCTests;
 			sourceTree = "<group>";
 		};
 		744ED95C21147183007EE1D7 = {
 			isa = PBXGroup;
 			children = (
 				744ED96721147183007EE1D7 /* AppCenterDemo */,
-				744ED98021147185007EE1D7 /* AppCenterDemoTests */,
 				744ED98B21147185007EE1D7 /* AppCenterDemoUITests */,
-				741540A8211D328000812D7E /* AppCenterDemoUnitTests */,
+				743C3183211D7AB9006BC00C /* AppCenterDemoXCTests */,
 				744ED96621147183007EE1D7 /* Products */,
 				4449F4841C59170437A79630 /* Pods */,
 				306F18D5603A1F82B5AD3FBA /* Frameworks */,
@@ -166,6 +177,7 @@
 				744ED97D21147185007EE1D7 /* AppCenterDemoTests.xctest */,
 				744ED98821147185007EE1D7 /* AppCenterDemoUITests.xctest */,
 				741540A7211D328000812D7E /* AppCenterDemoUnitTests.xctest */,
+				743C3182211D7AB9006BC00C /* AppCenterDemoXCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,15 +198,6 @@
 				7415409E211C81B300812D7E /* Artist.m */,
 			);
 			path = AppCenterDemo;
-			sourceTree = "<group>";
-		};
-		744ED98021147185007EE1D7 /* AppCenterDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				744ED98121147185007EE1D7 /* AppCenterDemoTests.m */,
-				744ED98321147185007EE1D7 /* Info.plist */,
-			);
-			path = AppCenterDemoTests;
 			sourceTree = "<group>";
 		};
 		744ED98B21147185007EE1D7 /* AppCenterDemoUITests */ = {
@@ -227,6 +230,24 @@
 			productReference = 741540A7211D328000812D7E /* AppCenterDemoUnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		743C3181211D7AB9006BC00C /* AppCenterDemoXCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 743C3189211D7AB9006BC00C /* Build configuration list for PBXNativeTarget "AppCenterDemoXCTests" */;
+			buildPhases = (
+				743C317E211D7AB9006BC00C /* Sources */,
+				743C317F211D7AB9006BC00C /* Frameworks */,
+				743C3180211D7AB9006BC00C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				743C3188211D7AB9006BC00C /* PBXTargetDependency */,
+			);
+			name = AppCenterDemoXCTests;
+			productName = AppCenterDemoXCTests;
+			productReference = 743C3182211D7AB9006BC00C /* AppCenterDemoXCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		744ED96421147183007EE1D7 /* AppCenterDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 744ED99121147185007EE1D7 /* Build configuration list for PBXNativeTarget "AppCenterDemo" */;
@@ -253,6 +274,7 @@
 				744ED97921147185007EE1D7 /* Sources */,
 				744ED97A21147185007EE1D7 /* Frameworks */,
 				744ED97B21147185007EE1D7 /* Resources */,
+				ABF6B1A982E6DF9F91E80437 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,6 +318,10 @@
 						CreatedOnToolsVersion = 9.4.1;
 						TestTargetID = 744ED96421147183007EE1D7;
 					};
+					743C3181211D7AB9006BC00C = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 744ED96421147183007EE1D7;
+					};
 					744ED96421147183007EE1D7 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -326,12 +352,20 @@
 				744ED97C21147185007EE1D7 /* AppCenterDemoTests */,
 				744ED98721147185007EE1D7 /* AppCenterDemoUITests */,
 				741540A6211D328000812D7E /* AppCenterDemoUnitTests */,
+				743C3181211D7AB9006BC00C /* AppCenterDemoXCTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		741540A5211D328000812D7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743C3180211D7AB9006BC00C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,6 +435,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		ABF6B1A982E6DF9F91E80437 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AppCenterDemoTests/Pods-AppCenterDemoTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppCenterXCUITestExtensions/AppCenterXCUITestExtensions.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppCenterXCUITestExtensions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppCenterDemoTests/Pods-AppCenterDemoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B1E9576C88C12B92938B948A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,7 +478,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				741540AA211D328000812D7E /* AppCenterDemoUnitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743C317E211D7AB9006BC00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743C3185211D7AB9006BC00C /* AppCenterDemoXCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +504,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				744ED98221147185007EE1D7 /* AppCenterDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +522,11 @@
 			isa = PBXTargetDependency;
 			target = 744ED96421147183007EE1D7 /* AppCenterDemo */;
 			targetProxy = 741540AC211D328000812D7E /* PBXContainerItemProxy */;
+		};
+		743C3188211D7AB9006BC00C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 744ED96421147183007EE1D7 /* AppCenterDemo */;
+			targetProxy = 743C3187211D7AB9006BC00C /* PBXContainerItemProxy */;
 		};
 		744ED97F21147185007EE1D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -529,6 +592,44 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.za.AppCenterDemoUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppCenterDemo.app/AppCenterDemo";
+			};
+			name = Release;
+		};
+		743C318A211D7AB9006BC00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRG8V5FQAN;
+				INFOPLIST_FILE = AppCenterDemoXCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.za.AppCenterDemoXCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppCenterDemo.app/AppCenterDemo";
+			};
+			name = Debug;
+		};
+		743C318B211D7AB9006BC00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRG8V5FQAN;
+				INFOPLIST_FILE = AppCenterDemoXCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.za.AppCenterDemoXCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppCenterDemo.app/AppCenterDemo";
@@ -767,6 +868,15 @@
 			buildConfigurations = (
 				741540AF211D328000812D7E /* Debug */,
 				741540B0211D328000812D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		743C3189211D7AB9006BC00C /* Build configuration list for PBXNativeTarget "AppCenterDemoXCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				743C318A211D7AB9006BC00C /* Debug */,
+				743C318B211D7AB9006BC00C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
