@@ -133,8 +133,9 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    Artist *artist = [self.tableData objectAtIndex:indexPath.row];
     
-    NSURL *trackPreviewURL = [NSURL URLWithString:@"Preview url here."];
+    NSURL *trackPreviewURL = [NSURL URLWithString:artist.previewUrlString];
     AVPlayerViewController * _moviePlayer1 = [[AVPlayerViewController alloc] init];
     _moviePlayer1.player = [AVPlayer playerWithURL:trackPreviewURL];
     
