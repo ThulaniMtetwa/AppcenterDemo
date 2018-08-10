@@ -10,6 +10,9 @@
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "Artist.h"
+@import AppCenter;
+@import AppCenterAnalytics;
+@import AppCenterCrashes;
 
 @interface SearchTableViewController ()
 {
@@ -62,13 +65,15 @@
                                                         NSLog(@"%@", error);
                                                     } else {
                                                         self.tableData = [self parseJsonData:data];
-                                                        
+                                                        [MSAnalytics trackEvent:[NSString stringWithFormat:@"Searched for artist query : %@",escapedUrlString]];
                                                         dispatch_async(dispatch_get_main_queue(), ^{
                                                             [self.tableView reloadData];
                                                         });
                                                     }
                                                 }];
     [task resume];
+    
+    
     
 }
 
