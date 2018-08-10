@@ -9,11 +9,13 @@
 #import "SearchTableViewController.h"
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "Artist.h"
 
 @interface SearchTableViewController ()
 {
-}
 
+}
+@property(nonatomic,strong) NSMutableArray * tableData;
 @end
 
 @implementation SearchTableViewController
@@ -27,6 +29,8 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+
+
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
 }
@@ -35,6 +39,63 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+#pragma mark - Method called for UISearchBarDelegate
+-(void) searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+    
+    [self.view endEditing:YES];
+}
+
+-(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    
+    NSString *query = [NSString stringWithFormat:@"https://itunes.apple.com/search?country=za&term=%@&limit=30",searchText];
+    
+    NSString * escapedUrlString = [query stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:escapedUrlString]];
+    
+    NSURLSession * urlSession = [NSURLSession sharedSession];
+    
+    NSURLSessionDataTask * task = [urlSession dataTaskWithRequest:request
+                                                completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+                                                    if (error) {
+                                                        NSLog(@"%@", error);
+                                                    } else {
+                                                        self.tableData = [self parseJsonData:data];
+                                                        
+                                                        dispatch_async(dispatch_get_main_queue(), ^{
+                                                            [self.tableView reloadData];
+                                                        });
+                                                    }
+                                                }];
+    [task resume];
+    
+}
+
+
+-(NSMutableArray *)parseJsonData:(NSData *)data{
+    NSMutableArray * catalog = [[NSMutableArray alloc]init];
+    
+    @try {
+        NSError *e = nil;
+        NSDictionary *jsonResult = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&e];
+        
+        for(NSDictionary * obj in jsonResult[@"results"]){
+            Artist * artist = [[Artist alloc]init];
+            
+            artist.trackName = [obj valueForKey:@"trackName"];
+            artist.previewUrlString = [obj valueForKey:@"previewUrl"];
+            
+            [catalog addObject:artist];
+            
+        }
+        
+    }
+    @catch (NSException *exception) {
+        NSLog(@"%@", exception.reason);
+    }
+    
+    return catalog;
 }
 
 
@@ -45,7 +106,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return [self.tableData count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -65,7 +126,8 @@
      }
      
      // Configure the cell
-     
+     Artist *artist = [self.tableData objectAtIndex:indexPath.row];
+     cell.textLabel.text =artist.trackName;
      return cell;
  }
 
