@@ -23,6 +23,7 @@
     // Override point for customization after application launch.
     [MSAppCenter start:@"ec965803-2f30-4f86-ba30-81d6443e29ef" withServices:@[[MSAnalytics class], [MSCrashes class]]];
 
+    [MSCrashes generateTestCrash];
     return YES;
 }
 
