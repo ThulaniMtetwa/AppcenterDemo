@@ -10,9 +10,8 @@
 #import <AVKit/AVKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "Artist.h"
-@import AppCenter;
 @import AppCenterAnalytics;
-@import AppCenterCrashes;
+
 
 
 
@@ -53,7 +52,10 @@
 
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     
-    NSString *query = [NSString stringWithFormat:@"https://itunes.apple.com/search?country=za&term=%@&limit=30",searchText];
+    
+    [MSAnalytics trackEvent:@"searchBar textDidChange" withProperties:@{ @"NSString" : searchText}];
+    
+    NSString *query = [NSString stringWithFormat:@"https://itune.apple.com/search?country=za&term=%@&limit=30",searchText];
     
     NSString * escapedUrlString = [query stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLFragmentAllowedCharacterSet]];
     

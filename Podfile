@@ -17,12 +17,12 @@ pod 'AppCenter/Crashes'
   target 'AppCenterDemoTests' do
     inherit! :search_paths
     # Pods for testing
-     pod 'AppCenterXCUITestExtensions'
   end
 
   target 'AppCenterDemoUITests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'AppCenterXCUITestExtensions'
   end
 
 end
